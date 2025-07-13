@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edwin Jr. D. Manlangit - Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Animate.css for Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">EJDM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="floating-logos">
+<!-- Programming + Network (existing ones) -->
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="float-icon" style="top: 60%; left: 5%; animation-delay: 0s;" title="HTML5">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="float-icon" style="top: 20%; left: 80%; animation-delay: 1s;" title="CSS3">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="float-icon" style="top: 40%; left: 20%; animation-delay: 2s;" title="JavaScript">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="float-icon" style="top: 70%; left: 70%; animation-delay: 3s;" title="Python">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="float-icon" style="top: 60%; left: 60%; animation-delay: 2.5s;" title="MySQL">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="float-icon" style="top: 28%; left: 8%; animation-delay: 1.5s;" title="Bootstrap">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" class="float-icon" style="top: 60%; left: 30%; animation-delay: 3.5s;" title="Arduino">
+<img src="https://cdn-icons-png.flaticon.com/512/93/93158.png" class="float-icon" style="top: 70%; left: 15%; animation-delay: 2.2s;" title="Wi-Fi">
+<img src="https://cdn-icons-png.flaticon.com/512/906/906175.png" class="float-icon" style="top: 15%; left: 65%; animation-delay: 0.8s;" title="LAN">
+<img src="https://cdn-icons-png.flaticon.com/128/888/888874.png" class="float-icon" style="top: 25%; left: 35%; animation-delay: 1.3s;" title="PowerPoint">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" class="float-icon" style="top: 60%; left: 85%; animation-delay: 2.6s;" title="Excel">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="float-icon" style="top: 45%; left: 75%; animation-delay: 1.8s;" title="Django">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" class="float-icon" style="top: 75%; left: 45%; animation-delay: 2.9s;" title="ChatGPT">
+<img src="https://cdn-icons-png.flaticon.com/512/2702/2702602.png" class="float-icon" style="top: 35%; left: 55%; animation-delay: 1.6s;" title="Google Drive">
+
+<!-- New Floating Icons -->
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="float-icon" style="top: 18%; left: 23%; animation-delay: 1.2s;" title="GitHub">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" class="float-icon" style="top: 90%; left: 82%; animation-delay: 2.4s;" title="Discord">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="float-icon" style="top: 20%; left: 45%; animation-delay: 1.9s;" title="VS Code">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" class="float-icon" style="top: 80%; left: 25%; animation-delay: 3.1s;" title="Oracle VM">
+
+
+
+</div>
+
+
+
+
+  <!-- Hero Section -->
+  <header class="animate__animated animate__fadeIn">
+    <div class="container">
+      <h1>Edwin Jr. D. Manlangit</h1>
+      <p>Web Developer | Software Developer | IT Support Specialist</p>
+      <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+    </div>
+  </header>
+
+<section id="about" class="d-flex align-items-center justify-content-center py-5 position-relative" style="min-height: 100vh;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-uppercase fw-bold text-neon">
+      <span class="animated-text">About Me</span>
+    </h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="lead bg-glass p-4 rounded-3 tech-text">
+          🖥️ <strong>System Online:</strong> Hello, I'm <strong>Edwin Jr. D. Manlangit</strong>—a <span class="highlight">Full-Stack Developer</span> & <span class="highlight">IT Specialist</span> fueled by innovation.  
+          💡 I specialize in crafting **scalable web apps, seamless UIs, and optimized systems** with <span class="highlight">Python (Django), JavaScript, HTML, CSS, and MySQL</span>.  
+          🚀 Let's engineer the **future of digital experiences** together!
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="profile-container d-flex justify-content-center align-items-center" style="height: 100%;">
+          <img src="image/me.jpg" alt="Profile Image" class="img-fluid rounded-circle profile-img" style="width: 600px; height: 600px; object-fit: cover; object-position: top;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section py-5 patterned-bg">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="text-center">
+        <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" class="tech-logo">
+        <img src="https://img.icons8.com/color/48/000000/django.png" alt="Django" class="tech-logo">
+        <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" class="tech-logo">
+        <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" class="tech-logo">
+        <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="tech-logo">
+        <img src="https://cdn-icons-png.flaticon.com/128/288/288882.png" alt="MySQL" class="tech-logo">
+        <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap" class="tech-logo">
+        <img src="https://img.icons8.com/color/48/000000/arduino.png" alt="Arduino" class="tech-logo">
+      </div>
+      <div class="text-center mt-4">
+        <span class="skill-badge">Microsoft Office (Word, Excel, PowerPoint, Outlook)</span>
+        <span class="skill-badge">Video Editing</span>
+        <span class="skill-badge">Basic Picture Editing</span>
+        <span class="skill-badge">Active Directory and Group Policy</span>
+        <span class="skill-badge">Networking: TCP/IP, DNS, DHCP, cable management</span>
+        <span class="skill-badge">Troubleshooting and diagnostic tools: Task Manager, System Configuration</span>
+      </div>
+    </div>
+  </section>
+<!-- Education Section -->
+<section id="education" class="py-5 patterned-bg">
+  <div class="container">
+    <h2 class="text-center mb-4 text-light">Education</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="education-item animate__animated animate__fadeInLeft">
+          <img src="image/tup.webp" alt="TUP Logo" class="education-logo">
+          <h4>Technological University of the Philippines - Cavite Campus</h4>
+          <p><strong>Bachelor of Engineering Technology major in Computer Engineering Technology (BET-COET)</strong></p>
+          <p>Carlos Q. Trinidad Avenue, Brgy. Salawag, Dasmarifias City, Cavite</p>
+          <p>2018 – 2023</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="education-item animate__animated animate__fadeInRight">
+          <img src="image/ncst.png" alt="NCST Logo" class="education-logo">
+          <h4>National College of Science and Technology - Senior High School</h4>
+          <p><strong>Science, Technology, Engineering & Mathematics (STEM)</strong></p>
+          <p>Dasmarifias City, Cavite</p>
+          <p>2016 – 2018</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 patterned-bg">
+  <div class="container">
+    <h2 class="text-center mb-4 text-light">Projects</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image/store.png" alt="Cafeteria System" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Cafeteria Management System</h5>
+            <p class="card-text">A web-based system for managing cafeteria operations, built with Django, HTML, CSS, and MySQL. It features inventory management, order placement, cart system, real-time order preview, Google authentication, and total sales tracking for efficient operations.</p>
+            <a href="https://www.youtube.com/watch?v=reuxoYUbso4" class="btn btn-primary" target="_blank">View on Youtube</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image/hris.png" alt="DepEd HRIS Web App" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">DepEd HRIS Web App</h5>
+            <p class="card-text">The DepEd HRIS Web App simplifies employee record management for the Department of Education. It offers Google authentication, PDS viewing, editing, printing, and employee management. Fast, secure, and efficient.</p>
+            <a href="https://www.canva.com/design/DAFlXqGKYSc/840myy3JohQed91p5FGryQ/edit" class="btn btn-primary" target="_blank">View more details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image/uitc.png" alt="UITC Borrowing System" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">University IT Center Borrowing System</h5>
+            <p class="card-text">A web-based application that allows users to borrow or request IT equipment online, track real-time inventory, and monitor borrowing logs for efficient management.</p>
+            <a href="" class="btn btn-primary" target="_blank">View more details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 patterned-bg">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center">
+          <p><strong>Email:</strong> edwinjrmanlangit@gmail.com</p>
+          <p><strong>Phone:</strong> 0928-578-1340</p>
+          <p><strong>Address:</strong> Barangay Burol II, Dasmarifias City, Cavite</p>
+          <div class="social-media mt-4">
+            <a href="https://www.facebook.com/dwnmnlngt/" target="_blank" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="mailto:edwinjrmanlangit@gmail.com" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="viber://chat?number=09285781340" title="Viber">
+              <i class="fab fa-viber"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 Edwin Jr. D. Manlangit. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Custom CSS -->
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa; /* Light gray background */
+      overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      font-weight: bold;
+	color: white;
+    text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.8), 0px 0px 20px rgba(0, 255, 255, 0.6);
+    font-family: "Orbitron", sans-serif;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 20px;
+	color: cyan;
+    text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.8), 0px 0px 20px rgba(0, 255, 255, 0.6);
+    font-family: "Orbitron", sans-serif;
+    }
+
+    header .btn {
+      margin-top: 30px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .card {
+      transition: transform 0.3s;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+ background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 20px 0;
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+    }
+
+    .skills-section {
+      background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Subtle pattern */
+ background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      padding: 40px 0;
+    }
+
+    .skill-badge {
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 5px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 20px;
+      font-size: 16px;
+    }
+
+    .project-link {
+      color: #e0f7fa; 
+      text-decoration: none;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    .social-media a {
+      color: #007bff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 24px;
+    }
+
+    .social-media a:hover {
+      color: 007bff
+    }
+
+    .tech-logo {
+      width: 65px;
+      height: 65px;
+      margin: 10px;
+    }
+
+    .education-item {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .education-item h4 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .education-item p {
+      margin-bottom: 5px;
+    }
+
+    .education-logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .additional-skills {
+      background-color: #ffffff;
+      padding: 40px 0;
+    }
+
+    .additional-skills h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .additional-skills ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .additional-skills ul li {
+      background-color: #f8f9fa;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+  /* Background */
+  #about {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+  }
+
+  /* Glassmorphism effect */
+  .bg-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Profile Image Hover Effect */
+  .profile-container {
+    display: inline-block;
+    position: relative;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  }
+
+  .profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  }
+
+  /* Animated Text */
+  .animated-text {
+    display: inline-block;
+    animation: fadeInUp 1.2s ease-in-out;
+    background: linear-gradient(45deg, #0dcaf0, #0dcaf0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Keyframes for animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.text-neon {
+  color: cyan;
+  text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.8), 0px 0px 20px rgba(0, 255, 255, 0.6);
+  font-family: "Orbitron", sans-serif;
+}
+
+.tech-text {
+  font-size: 1.3rem;
+  font-family: "Courier New", monospace;
+  text-shadow: 1px 1px 10px rgba(0, 255, 255, 0.6);
+  letter-spacing: 0.8px;
+  color: #e0f7fa;
+}
+
+.highlight {
+  color: #00e5ff;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+}
+
+.patterned-bg {
+  background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Subtle pattern */
+  padding: 40px 0;
+background : linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+color: #e0f7fa; /* Light text */
+}
+.text-light{
+  color: #e0f7fa; /* Light text */
+}
+.nav{rgba(0, 255, 255, 0.6);}
+
+
+
+.floating-logos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto; /* <-- allow hover */
+  z-index: 1;
+}
+
+.float-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: 0.3;
+  animation: floatLogo 6s infinite ease-in-out;
+  filter: drop-shadow(0 0 10px rgba(0,255,255,0.5));
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+  z-index: 2;
+}
+
+.float-icon:hover {
+  transform: scale(1.2) translateY(-10px);
+  opacity: 1;
+  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.9));
+}
+
+
+@keyframes floatLogo {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px); /* Bigger bounce */
+  }
+}
+
+  </style>
+
+<audio id="hoverSound" src="https://assets.mixkit.co/sfx/preview/mixkit-interface-click-1126.mp3" preload="auto"></audio>
+<script>
+  const icons = document.querySelectorAll('.float-icon');
+  const sound = document.getElementById('hoverSound');
+
+  icons.forEach(icon => {
+    icon.addEventListener('mouseenter', () => {
+      sound.currentTime = 0;
+      sound.play();
+    });
+  });
+</script>
+
+</body>
+</html>
