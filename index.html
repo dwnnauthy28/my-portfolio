@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Animate.css for Animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   
 </head>
 <body>
@@ -51,7 +52,7 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="float-icon" style="top: 60%; left: 60%; animation-delay: 2.5s;" title="MySQL">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="float-icon" style="top: 28%; left: 8%; animation-delay: 1.5s;" title="Bootstrap">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" class="float-icon" style="top: 60%; left: 30%; animation-delay: 3.5s;" title="Arduino">
-<img src="https://cdn-icons-png.flaticon.com/512/93/93158.png" class="float-icon" style="top: 70%; left: 15%; animation-delay: 2.2s;" title="Wi-Fi">
+<img src="https://cdn-icons-png.flaticon.com/128/9714/9714376.png" class="float-icon" style="top: 70%; left: 15%; animation-delay: 2.2s;" title="Wi-Fi">
 <img src="https://cdn-icons-png.flaticon.com/512/906/906175.png" class="float-icon" style="top: 15%; left: 65%; animation-delay: 0.8s;" title="LAN">
 <img src="https://cdn-icons-png.flaticon.com/128/888/888874.png" class="float-icon" style="top: 25%; left: 35%; animation-delay: 1.3s;" title="PowerPoint">
 <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" class="float-icon" style="top: 60%; left: 85%; animation-delay: 2.6s;" title="Excel">
@@ -60,7 +61,7 @@
 <img src="https://cdn-icons-png.flaticon.com/512/2702/2702602.png" class="float-icon" style="top: 35%; left: 55%; animation-delay: 1.6s;" title="Google Drive">
 
 <!-- New Floating Icons -->
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="float-icon" style="top: 18%; left: 23%; animation-delay: 1.2s;" title="GitHub">
+<img src="https://cdn-icons-png.flaticon.com/128/919/919847.png" class="float-icon" style="top: 18%; left: 23%; animation-delay: 1.2s;" title="GitHub">
 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" class="float-icon" style="top: 90%; left: 82%; animation-delay: 2.4s;" title="Discord">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="float-icon" style="top: 20%; left: 45%; animation-delay: 1.9s;" title="VS Code">
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" class="float-icon" style="top: 80%; left: 25%; animation-delay: 3.1s;" title="Oracle VM">
@@ -76,7 +77,7 @@
   <header class="animate__animated animate__fadeIn">
     <div class="container">
       <h1>Edwin Jr. D. Manlangit</h1>
-      <p>Web Developer | Software Developer | IT Support Specialist</p>
+      <p>Web Developer | Software Developer | IT Support Specialist | AI Automation Specialist</p>
       <a href="#about" class="btn btn-light btn-lg">Learn More</a>
     </div>
   </header>
@@ -89,15 +90,43 @@
     <div class="row align-items-center">
       <div class="col-md-6">
         <p class="lead bg-glass p-4 rounded-3 tech-text">
-          🖥️ <strong>System Online:</strong> Hello, I'm <strong>Edwin Jr. D. Manlangit</strong>—a <span class="highlight">Full-Stack Developer</span> & <span class="highlight">IT Specialist</span> fueled by innovation.  
-          💡 I specialize in crafting **scalable web apps, seamless UIs, and optimized systems** with <span class="highlight">Python (Django), JavaScript, HTML, CSS, and MySQL</span>.  
-          🚀 Let's engineer the **future of digital experiences** together!
+	🖥️ <strong>System Online:</strong> Hello, I'm <strong>Edwin Jr. D. Manlangit</strong>—a <span class="highlight">Full-Stack Developer</span>, <span class="highlight">AI Automation Specialist</span> & <span class="highlight">IT Specialist</span> fueled by innovation.  
+	💡 I specialize in crafting <strong>scalable web apps, seamless UIs, smart automations, and optimized systems</strong> using <span class="highlight">Python (Django), JavaScript, HTML, CSS, MySQL</span>, and <span class="highlight">AI tools & APIs</span>.  
+	🤖 I build intelligent workflows, chatbots, and automation pipelines that save time and elevate productivity.  
+	🚀 Let's engineer the <strong>future of digital experiences</strong> together!
         </p>
       </div>
       <div class="col-md-6 text-center">
-        <div class="profile-container d-flex justify-content-center align-items-center" style="height: 100%;">
-          <img src="image/me.jpg" alt="Profile Image" class="img-fluid rounded-circle profile-img" style="width: 600px; height: 600px; object-fit: cover; object-position: top;">
+        <!-- START OF CAROUSEL CODE -->
+        <div id="profileCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#profileCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#profileCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#profileCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <!-- Add more buttons for each image you add -->
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/me.jpg" class="d-block w-100 profile-carousel-img" alt="Profile Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="image/me2.jpg" class="d-block w-100 profile-carousel-img" alt="Profile Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="image/me3.jpg" class="d-block w-100 profile-carousel-img" alt="Profile Image 3">
+            </div>
+            <!-- Add more carousel-item divs for each image you add -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#profileCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#profileCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+        <!-- END OF CAROUSEL CODE -->
       </div>
     </div>
   </div>
@@ -116,9 +145,10 @@
         <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" class="tech-logo">
         <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" class="tech-logo">
         <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="tech-logo">
-        <img src="https://cdn-icons-png.flaticon.com/128/288/288882.png" alt="MySQL" class="tech-logo">
+        <img src="https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=000000" alt="MySQL" class="tech-logo">
         <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap" class="tech-logo">
-        <img src="https://img.icons8.com/color/48/000000/arduino.png" alt="Arduino" class="tech-logo">
+        <img src="https://img.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" class="tech-logo">
+        <img src="https://img.icons8.com/?size=100&id=ka3InxFU3QZa&format=png&color=000000" alt="Arduino" class="tech-logo">
       </div>
       <div class="text-center mt-4">
         <span class="skill-badge">Microsoft Office (Word, Excel, PowerPoint, Outlook)</span>
@@ -127,6 +157,7 @@
         <span class="skill-badge">Active Directory and Group Policy</span>
         <span class="skill-badge">Networking: TCP/IP, DNS, DHCP, cable management</span>
         <span class="skill-badge">Troubleshooting and diagnostic tools: Task Manager, System Configuration</span>
+        <span class="skill-badge">AI Automation (n8n, GoHighLevel, OpenAi)</span>
       </div>
     </div>
   </section>
@@ -219,6 +250,12 @@
             <a href="viber://chat?number=09285781340" title="Viber">
               <i class="fab fa-viber"></i>
             </a>
+            <a href="https://wa.me/09285781340" title="Whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="www.linkedin.com/in/edwin-jr-manlangit-403391122" title="Linkedin">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -238,283 +275,245 @@
 
 <!-- Custom CSS -->
   <style>
-    /* Custom Styles */
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f8f9fa; /* Light gray background */
-      overflow-x: hidden; /* Prevent horizontal scroll */
-    }
 
-    .navbar {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+/* Base styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
-    header {
-      height: 100vh;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+/* Navbar */
+.navbar {
+  background-color: #161b22 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  z-index: 1030; /* Bootstrap's default z-index for fixed-top navbars is often around 1030 */
+}
+.navbar-brand, .nav-link {
+  color: #c9d1d9 !important;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #58a6ff !important;
+}
 
-    header h1 {
-      font-size: 4rem;
-      font-weight: bold;
-	color: white;
-    text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.8), 0px 0px 20px rgba(0, 255, 255, 0.6);
-    font-family: "Orbitron", sans-serif;
-    }
+/* Hero Section */
+header {
+  height: 100vh;
+  background: radial-gradient(circle at center, #0d1117, #161b22);
+  color: #f0f6fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+header h1 {
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  color: #58a6ff;
+  text-shadow: 0 0 15px rgba(88, 166, 255, 0.6);
+}
+header p {
+  font-size: 1.4rem;
+  color: #8b949e;
+}
+header .btn {
+  background-color: #238636;
+  color: white;
+  border: none;
+  z-index: 5; /* Give buttons a z-index higher than the floating icons */
+  position: relative; /* Ensure z-index applies */
+}
+header .btn:hover {
+  background-color: #2ea043;
+}
 
-    header p {
-      font-size: 1.5rem;
-      margin-top: 20px;
-	color: cyan;
-    text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.8), 0px 0px 20px rgba(0, 255, 255, 0.6);
-    font-family: "Orbitron", sans-serif;
-    }
+/* Sections */
+section {
+  padding: 80px 0;
+}
+.patterned-bg {
+  background-color: #161b22;
+}
+.text-light, .text-center h2 {
+  color: #f0f6fc;
+}
 
-    header .btn {
-      margin-top: 30px;
-    }
+/* Cards */
+.card {
+  background-color: #21262d;
+  color: #c9d1d9;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-title {
+  color: #58a6ff;
+}
 
-    section {
-      padding: 80px 0;
-    }
-
-    .card {
-      transition: transform 0.3s;
-      border: none;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    footer {
-      margin-top: 60px;
- background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      padding: 20px 0;
-    }
-
-    .profile-img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid white;
-    }
-
-    .skills-section {
-      background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Subtle pattern */
- background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      padding: 40px 0;
-    }
-
-    .skill-badge {
-      display: inline-block;
-      padding: 10px 15px;
-      margin: 5px;
-      background-color: #007bff;
-      color: white;
-      border-radius: 20px;
-      font-size: 16px;
-    }
-
-    .project-link {
-      color: #e0f7fa; 
-      text-decoration: none;
-    }
-
-    .project-link:hover {
-      text-decoration: underline;
-    }
-
-    .social-media a {
-      color: #007bff;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 24px;
-    }
-
-    .social-media a:hover {
-      color: 007bff
-    }
-
-    .tech-logo {
+/* Skills */
+.skill-badge {
+  background-color: #30363d;
+  color: #58a6ff;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.tech-logo {
       width: 65px;
       height: 65px;
       margin: 10px;
     }
 
-    .education-item {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .education-item h4 {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    .education-item p {
-      margin-bottom: 5px;
-    }
-
-    .education-logo {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 15px;
-    }
-
-    .additional-skills {
-      background-color: #ffffff;
-      padding: 40px 0;
-    }
-
-    .additional-skills h2 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .additional-skills ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .additional-skills ul li {
-      background-color: #f8f9fa;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-  /* Background */
-  #about {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: #fff;
-  }
-
-  /* Glassmorphism effect */
-  .bg-glass {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-
-  /* Profile Image Hover Effect */
-  .profile-container {
-    display: inline-block;
-    position: relative;
-  }
-
-  .profile-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 5px solid rgba(255, 255, 255, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-  }
-
-  .profile-img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-  }
-
-  /* Animated Text */
-  .animated-text {
-    display: inline-block;
-    animation: fadeInUp 1.2s ease-in-out;
-    background: linear-gradient(45deg, #0dcaf0, #0dcaf0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  /* Keyframes for animation */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-.text-neon {
-  color: cyan;
-  text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.8), 0px 0px 20px rgba(0, 255, 255, 0.6);
-  font-family: "Orbitron", sans-serif;
-}
-
-.tech-text {
+/* Education */
+.education-item h4 {
+  color: #58a6ff;
   font-size: 1.3rem;
-  font-family: "Courier New", monospace;
-  text-shadow: 1px 1px 10px rgba(0, 255, 255, 0.6);
-  letter-spacing: 0.8px;
-  color: #e0f7fa;
+}
+.education-logo {  
+  width: 100px;
+  margin: 0 auto 10px auto;
+  display: block;
 }
 
+/* About Section Text */
+.tech-text {
+  font-size: 1.2rem;
+  color: #c9d1d9;
+  line-height: 1.7;
+}
 .highlight {
-  color: #00e5ff;
-  font-weight: bold;
-  text-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+  color: #58a6ff;
+  font-weight: 600;
+}
+.bg-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 20px;
 }
 
-.patterned-bg {
-  background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Subtle pattern */
-  padding: 40px 0;
-background : linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-
-color: #e0f7fa; /* Light text */
-}
-.text-light{
-  color: #e0f7fa; /* Light text */
-}
-.nav{rgba(0, 255, 255, 0.6);}
-
-
-
+/* Floating Logos */
 .floating-logos {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: auto; /* <-- allow hover */
-  z-index: 1;
+  pointer-events: none; /* Allows clicks to pass through the container */
+  z-index: 1; /* Set a lower z-index for the container */
 }
-
 .float-icon {
   position: absolute;
   width: 50px;
   height: 50px;
   opacity: 0.3;
   animation: floatLogo 6s infinite ease-in-out;
-  filter: drop-shadow(0 0 10px rgba(0,255,255,0.5));
-  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
-  z-index: 2;
+  filter: drop-shadow(0 0 10px rgba(88, 166, 255, 0.4));
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 2; /* Keep this z-index for individual icons if they need to be above the container but below other elements */
+  pointer-events: auto; /* Re-enable pointer events for the individual icons */
 }
-
 .float-icon:hover {
   transform: scale(1.2) translateY(-10px);
   opacity: 1;
-  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.9));
+  filter: drop-shadow(0 0 20px rgba(88, 166, 255, 0.8));
 }
-
-
 @keyframes floatLogo {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-40px); /* Bigger bounce */
+    transform: translateY(-30px);
   }
+}
+
+/* Social Icons */
+.social-media a {
+  color: #58a6ff;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+.social-media a:hover {
+  color: #79c0ff;
+}
+
+/* Footer */
+footer {
+  background-color: #161b22;
+  color: #8b949e;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Animated Text Header */
+.animated-text {
+  display: inline-block;
+  background: linear-gradient(45deg, #58a6ff, #2ea043);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* NEW CSS FOR CAROUSEL */
+/* Profile Carousel Styling */
+.profile-carousel-img {
+  width: 100%; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
+  object-fit: cover; /* Changed from 'cover' to 'contain' */
+  object-position: 10% 15%;
+  #border-radius: 50%; /* Keeps the circular mask, but image will shrink to fit */
+  border: 5px solid #30363d;
+  margin: 0 auto; /* Center the image within the carousel item */
+  display: block; /* Ensure margin auto works */
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #21262d; /* Add a background color to fill empty space if image is not square */
+}
+
+.profile-carousel-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.7);
+}
+
+/* Adjust carousel container to center it */
+#profileCarousel {
+  max-width: 450px; /* Max width of the carousel container */
+  margin: 0 auto; /* Center the carousel */
+}
+
+/* Ensure carousel controls are visible and styled */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Darker background for icons */
+  border-radius: 50%; /* Make icons circular */
+  padding: 15px; /* Adjust padding for icon size */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%; /* Adjust width of clickable area for controls */
 }
 
   </style>
