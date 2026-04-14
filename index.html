@@ -7,7 +7,511 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">EJDM</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
+      <li><a href="#education" onclick="closeMobile()">Education</a></li>
+      <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <!-- Floating Tech Icons -->
+    <div class="floating-icons" aria-hidden="true">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"            class="float-icon" style="top:62%;left:5%;animation-delay:0s;"    title="HTML5">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"              class="float-icon" style="top:18%;left:80%;animation-delay:1s;"   title="CSS3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"  class="float-icon" style="top:38%;left:18%;animation-delay:2s;"   title="JavaScript">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"          class="float-icon" style="top:68%;left:72%;animation-delay:3s;"   title="Python">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"            class="float-icon" style="top:55%;left:60%;animation-delay:2.5s;" title="MySQL">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"   class="float-icon" style="top:25%;left:8%;animation-delay:1.5s;"  title="Bootstrap">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"        class="float-icon" style="top:58%;left:30%;animation-delay:3.5s;" title="Arduino">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"             class="float-icon" style="top:42%;left:70%;animation-delay:1.8s;filter:invert(1) drop-shadow(0 0 8px rgba(56,189,248,0.4));" title="Django">
+      <img src="https://cdn-icons-png.flaticon.com/128/919/919847.png"                                  class="float-icon" style="top:15%;left:22%;animation-delay:1.2s;" title="GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"         class="float-icon" style="top:18%;left:46%;animation-delay:1.9s;" title="VS Code">
+      <img src="https://cdn-icons-png.flaticon.com/128/888/888874.png"                                  class="float-icon" style="top:22%;left:35%;animation-delay:1.3s;" title="PowerPoint">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png"                                  class="float-icon" style="top:58%;left:86%;animation-delay:2.6s;" title="Excel">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"                   class="float-icon" style="top:74%;left:46%;animation-delay:2.9s;" title="ChatGPT">
+      <img src="https://cdn-icons-png.flaticon.com/512/2702/2702602.png"                                class="float-icon" style="top:32%;left:56%;animation-delay:1.6s;" title="Google Drive">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"                                class="float-icon" style="top:82%;left:14%;animation-delay:2.4s;" title="Discord">
+      <img src="https://cdn-icons-png.flaticon.com/128/9714/9714376.png"                                class="float-icon" style="top:70%;left:15%;animation-delay:2.2s;" title="Wi-Fi">
+      <img src="https://cdn-icons-png.flaticon.com/512/906/906175.png"                                  class="float-icon" style="top:12%;left:65%;animation-delay:0.8s;" title="LAN">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg"                    class="float-icon" style="top:80%;left:88%;animation-delay:3.1s;" title="Oracle VM">
+      <img src="https://img.icons8.com/?size=80&id=YrKoPXb4jv9l&format=png"                            class="float-icon" style="top:88%;left:55%;animation-delay:0.5s;" title="PHP">
+      <img src="https://img.icons8.com/?size=100&id=zQjzFjPpT2Ek&format=png&color=000000"               class="float-icon" style="top:48%;left:10%;animation-delay:2.8s;" title="Claude Code">
+      <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg"    class="float-icon" style="top:48%;left:80%;animation-delay:3.2s;" title="Gemini">
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow"><span></span> Available for opportunities</div>
+      <h1 class="hero-name">Edwin Jr. D.<br><em>Manlangit</em></h1>
+      <p class="hero-role">
+        <strong>Web Developer</strong> &nbsp;·&nbsp; <strong>Software Developer</strong> &nbsp;·&nbsp;
+        <strong>IT Support Specialist</strong> &nbsp;·&nbsp; <strong>AI Automation Specialist</strong>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="section-label">About Me</p>
+          <h2 class="section-title" style="margin-bottom:1.5rem;">Building digital experiences with purpose</h2>
+          <p>Hi, I'm <strong>Edwin Jr. D. Manlangit</strong> — a <em>Full-Stack Developer</em>, <em>AI Automation Specialist</em> & <em>IT Specialist</em> fueled by innovation.</p>
+          <p>I specialize in crafting <strong>scalable web apps, seamless UIs, smart automations, and optimized systems</strong> using <strong>Python (Django), PHP, JavaScript, HTML, CSS, MySQL</strong>, and <strong>AI tools & APIs</strong>.</p>
+          <p>I build intelligent workflows, chatbots, and automation pipelines that save time and elevate productivity. Let's engineer the <strong>future of digital experiences</strong> together.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-num">🎓</div>
+              <div class="stat-label">Fresh Graduate</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">6+</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">BET</div>
+              <div class="stat-label">Degree — COET</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo Carousel -->
+        <div class="about-img-wrap reveal">
+          <div class="carousel-wrap">
+            <div class="carousel-slides" id="carouselSlides">
+              <div class="carousel-slide">
+                <img src="image/me.jpg" alt="Edwin Manlangit" onerror="this.style.background='var(--surface2)'">
+              </div>
+              <div class="carousel-slide">
+                <img src="image/me2.jpg" alt="Edwin Manlangit 2" onerror="this.style.background='var(--surface2)'">
+              </div>
+              <div class="carousel-slide">
+                <img src="image/me3.jpg" alt="Edwin Manlangit 3" onerror="this.style.background='var(--surface2)'">
+              </div>
+            </div>
+            <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next" id="carouselNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-dots" id="carouselDots">
+              <button class="carousel-dot active" data-index="0"></button>
+              <button class="carousel-dot" data-index="1"></button>
+              <button class="carousel-dot" data-index="2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label reveal">Expertise</p>
+      <h2 class="section-title reveal">Technologies & Skills</h2>
+      <div class="skills-grid reveal">
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=80&id=YrKoPXb4jv9l&format=png" alt="PHP"><span>PHP</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" style="filter:invert(1)"><span>Django</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><span>Bootstrap</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino"><span>Arduino</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)"><span>GitHub</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
+        <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="OpenAI"><span>OpenAI</span></div>
+        <div class="skill-card"><img src="https://logowik.com/content/uploads/images/laragon7302.jpg" alt="Laragon"><span>Laragon</span></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=zQjzFjPpT2Ek&format=png&color=000000" alt="Claude Code"><span>Claude Code</span></div>
+        <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI"><span>Power BI</span></div>
+        <div class="skill-card"><img src="https://openvpn.net/_assets/logo_dark_98a890727a.svg" alt="OpenVPN"><span>OpenVPN</span></div>
+        <div class="skill-card"><img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Gemini"><span>Gemini</span></div>
+        <div class="skill-card"><img src="https://www.vectorlogo.zone/logos/traeai/traeai-icon.svg" alt="Trae AI"><span>Trae AI</span></div>
+        <div class="skill-card"><img src="https://img.icons8.com/fluency/48/microsoft-copilot.png" alt="microsoft-copilot"/><span>Copilot</span></div>
+        <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/DeepSeek_logo.svg" alt="DeepSeek"><span>DeepSeek</span></div>
+        
+        
+      </div>
+      <div class="reveal">
+        <p style="color:var(--muted);font-size:0.85rem;margin-bottom:1rem;">Additional competencies</p>
+        <div class="skill-tags">
+          <span class="skill-tag">AI Automation (n8n, GoHighLevel, OpenAI)</span>
+          <span class="skill-tag">Microsoft Office Suite</span>
+          <span class="skill-tag">Active Directory & Group Policy</span>
+          <span class="skill-tag">TCP/IP · DNS · DHCP</span>
+          <span class="skill-tag">Cable Management</span>
+          <span class="skill-tag">Network Troubleshooting</span>
+          <span class="skill-tag">Task Manager & System Config</span>
+          <span class="skill-tag">Video Editing</span>
+          <span class="skill-tag">Photo Editing</span>
+          <span class="skill-tag">Google Workspace</span>
+          <span class="skill-tag">Oracle VM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <p class="section-label reveal">Background</p>
+      <h2 class="section-title reveal">Education</h2>
+      <div class="education-grid">
+        <div class="edu-card reveal">
+          <img src="image/tup.webp" alt="TUP Logo" class="edu-logo">
+          <div class="edu-info">
+            <h4>Technological University of the Philippines — Cavite</h4>
+            <div class="degree">Bachelor of Engineering Technology<br>Major in Computer Engineering Technology (BET-COET)</div>
+            <div class="meta">Carlos Q. Trinidad Ave., Brgy. Salawag, Dasmariñas City, Cavite</div>
+            <div class="edu-year">2018 – 2023</div>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <img src="image/ncst.png" alt="NCST Logo" class="edu-logo">
+          <div class="edu-info">
+            <h4>National College of Science and Technology — Senior High School</h4>
+            <div class="degree">Science, Technology, Engineering & Mathematics (STEM)</div>
+            <div class="meta">Dasmariñas City, Cavite</div>
+            <div class="edu-year">2016 – 2018</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label reveal">Work</p>
+      <h2 class="section-title reveal">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <img src="image/store.png" alt="Cafeteria Management System" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-img-placeholder"><i class="fas fa-utensils"></i></div>
+          <div class="project-body">
+            <h5>Cafeteria Management System</h5>
+            <div class="project-tech">
+              <span class="tech-pill">Django</span><span class="tech-pill">Python</span>
+              <span class="tech-pill">MySQL</span><span class="tech-pill">HTML/CSS</span>
+            </div>
+            <p>A web-based system for managing cafeteria operations with inventory management, order placement, cart system, real-time order preview, Google authentication, and total sales tracking.</p>
+            <a href="https://www.youtube.com/watch?v=reuxoYUbso4" class="btn btn-ghost btn-sm" target="_blank">
+              <i class="fab fa-youtube"></i> Watch Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <img src="image/hris.png" alt="DepEd HRIS Web App" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-img-placeholder"><i class="fas fa-users"></i></div>
+          <div class="project-body">
+            <h5>DepEd HRIS Web App</h5>
+            <div class="project-tech">
+              <span class="tech-pill">Django</span><span class="tech-pill">Google Auth</span><span class="tech-pill">MySQL</span>
+            </div>
+            <p>Simplifies employee record management for the Department of Education. Features Google authentication, PDS viewing, editing, printing, and full employee management.</p>
+            <a href="https://www.canva.com/design/DAFlXqGKYSc/840myy3JohQed91p5FGryQ/edit" class="btn btn-ghost btn-sm" target="_blank">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <img src="image/uitc.png" alt="UITC Borrowing System" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-img-placeholder"><i class="fas fa-laptop"></i></div>
+          <div class="project-body">
+            <h5>University IT Center Borrowing System</h5>
+            <div class="project-tech">
+              <span class="tech-pill">Web App</span><span class="tech-pill">Inventory</span>
+            </div>
+            <p>A web-based application enabling users to borrow or request IT equipment online, track real-time inventory, and monitor borrowing logs for efficient resource management.</p>
+            <span class="btn btn-ghost btn-sm" style="opacity:0.5;cursor:default">
+              <i class="fas fa-clock"></i> Internal System
+            </span>
+          </div>
+        </div>
+
+        <!-- Sub-ARO Monitoring System -->
+        <div class="project-card reveal">
+          <img src="image/saroo.jpg" alt="Sub-ARO Monitoring System" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-img-placeholder"><i class="fas fa-chart-bar"></i></div>
+          <div class="project-body">
+            <h5>Sub-ARO Monitoring System</h5>
+            <div class="project-tech">
+              <span class="tech-pill">Web App</span><span class="tech-pill">Dashboard</span>
+              <span class="tech-pill">Finance</span><span class="tech-pill">MySQL</span>
+            </div>
+            <p>A budget monitoring dashboard for DepEd SDO tracking Sub-ARO allocations, obligations, disbursements, and utilization rates across departments (CID, ICT, SGOD) with real-time analytics and reporting.</p>
+            <span class="btn btn-ghost btn-sm" style="opacity:0.5;cursor:default">
+              <i class="fas fa-lock"></i> Internal System
+            </span>
+          </div>
+        </div>
+
+        <!-- DepEd eProcurement Portal -->
+        <div class="project-card reveal">
+          <img src="image/eproc.jpg" alt="DepEd eProcurement Portal" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-img-placeholder"><i class="fas fa-shopping-cart"></i></div>
+          <div class="project-body">
+            <h5>DepEd eProcurement Portal</h5>
+            <div class="project-tech">
+              <span class="tech-pill">Web App</span><span class="tech-pill">PPMP</span>
+              <span class="tech-pill">Procurement</span><span class="tech-pill">Gov't</span>
+            </div>
+            <p>Official procurement portal for SDO Dasmariñas. Provides secure access to PPMP tools, bidding opportunities, and procurement documents in compliance with Republic Act No. 9184 (Government Procurement Reform Act).</p>
+            <span class="btn btn-ghost btn-sm" style="opacity:0.5;cursor:default">
+              <i class="fas fa-lock"></i> Internal System
+            </span>
+          </div>
+        </div>
+
+        <!-- DepEd School Handbook -->
+        <div class="project-card reveal">
+          <img src="image/handbook.jpg" alt="DepEd Dasmariñas School Handbook" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-img-placeholder"><i class="fas fa-book-open"></i></div>
+          <div class="project-body">
+            <h5>DepEd Dasmariñas School Handbook</h5>
+            <div class="project-tech">
+              <span class="tech-pill">Web App</span><span class="tech-pill">HTML/CSS</span>
+              <span class="tech-pill">JavaScript</span><span class="tech-pill">DepEd</span>
+            </div>
+            <p>Official digital student handbook for the City Schools Division of Dasmariñas. Covers K-12 curriculum, academic guidelines, student services, discipline, policies, and rights & duties with a searchable interface.</p>
+            <span class="btn btn-ghost btn-sm" style="opacity:0.5;cursor:default">
+              <i class="fas fa-lock"></i> Internal System
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label reveal">Contact</p>
+      <h2 class="section-title reveal">Let's Connect</h2>
+      <div class="contact-inner">
+        <div class="reveal">
+          <div class="contact-info">
+            <h3>Get in touch</h3>
+            <p>Whether it's a project, job opportunity, or collaboration — I'd love to hear from you.</p>
+          </div>
+          <div class="contact-items">
+            <a href="mailto:edwinjrmanlangit@gmail.com" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-item-text">
+                <div class="label">Email</div>
+                <div class="value">edwinjrmanlangit@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:09285781340" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-item-text">
+                <div class="label">Phone</div>
+                <div class="value">0928-578-1340</div>
+              </div>
+            </a>
+            <div class="contact-item" style="cursor:default">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-item-text">
+                <div class="label">Location</div>
+                <div class="value">Brgy. Burol II, Dasmariñas City, Cavite</div>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/dwnmnlngt/" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/edwin-jr-manlangit-403391122" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/639285781340" target="_blank" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="viber://chat?number=09285781340" class="social-link" title="Viber"><i class="fab fa-viber"></i></a>
+            <a href="mailto:edwinjrmanlangit@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="location-card reveal">
+          <h4><i class="fas fa-paper-plane" style="color:var(--accent);margin-right:0.5rem"></i>Send a Message</h4>
+          <div id="contactForm">
+            <div class="form-group">
+              <label class="form-label">Your Name</label>
+              <input type="text" id="fromName" class="form-input" placeholder="Juan dela Cruz" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Your Email</label>
+              <input type="email" id="fromEmail" class="form-input" placeholder="juan@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea id="message" class="form-input form-textarea" placeholder="Hi Edwin, I'd like to discuss..." required></textarea>
+            </div>
+            <button id="sendBtn" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="formStatus" style="display:none;margin-top:1rem;padding:0.75rem 1rem;border-radius:10px;font-size:0.85rem;text-align:center;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 <span>Edwin Jr. D. Manlangit</span>. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // ── Hamburger ──
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+    function closeMobile() { mobileMenu.classList.remove('open'); }
+
+    // ── Carousel ──
+    const slides = document.getElementById('carouselSlides');
+    const dots = document.querySelectorAll('.carousel-dot');
+    let current = 0;
+    const total = dots.length;
+
+    function goTo(index) {
+      current = (index + total) % total;
+      slides.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    document.getElementById('carouselPrev').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('carouselNext').addEventListener('click', () => goTo(current + 1));
+    dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.index)));
+
+    // Auto-advance every 5s
+    setInterval(() => goTo(current + 1), 5000);
+
+    // ── Scroll Reveal ──
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 60);
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    // ── Active Nav ──
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
+      navLinks.forEach(a => { a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--accent)' : ''; });
+    });
+  </script>
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // ── EmailJS Setup ──
+    // TO ACTIVATE: 
+    // 1. Go to https://www.emailjs.com and create a free account
+    // 2. Add an Email Service (Gmail) → copy your Service ID
+    // 3. Create an Email Template with variables: {{from_name}}, {{from_email}}, {{message}}
+    //    Set "To Email" in the template to: edwinjrmanlangit@gmail.com
+    // 4. Copy your Public Key from Account → API Keys
+    // 5. Replace the three placeholder values below with your real IDs
+    const EMAILJS_PUBLIC_KEY  = 'Ipze_u-LjbS9QolGf';   // e.g. 'abc123XYZ'
+    const EMAILJS_SERVICE_ID  = 'service_04ogpjl';   // e.g. 'service_xxxxxx'
+    const EMAILJS_TEMPLATE_ID = 'template_yxsi37b';  // e.g. 'template_xxxxxx'
+
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+
+    document.getElementById('sendBtn').addEventListener('click', async () => {
+      const name    = document.getElementById('fromName').value.trim();
+      const email   = document.getElementById('fromEmail').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status  = document.getElementById('formStatus');
+      const btn     = document.getElementById('sendBtn');
+
+      if (!name || !email || !message) {
+        showStatus('Please fill in all fields.', false);
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showStatus('Please enter a valid email address.', false);
+        return;
+      }
+
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+
+      try {
+        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+          from_name:  name,
+          from_email: email,
+          message:    message,
+          to_email:   'edwinjrmanlangit@gmail.com'
+        });
+        showStatus('✅ Message sent! I\'ll get back to you soon.', true);
+        document.getElementById('fromName').value = '';
+        document.getElementById('fromEmail').value = '';
+        document.getElementById('message').value = '';
+      } catch (err) {
+        showStatus('❌ Failed to send. Please try emailing directly.', false);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      }
+    });
+
+    function showStatus(msg, success) {
+      const el = document.getElementById('formStatus');
+      el.textContent = msg;
+      el.style.display = 'block';
+      el.style.background = success ? 'rgba(46,160,67,0.15)' : 'rgba(248,81,73,0.15)';
+      el.style.border = success ? '1px solid rgba(46,160,67,0.3)' : '1px solid rgba(248,81,73,0.3)';
+      el.style.color = success ? '#3fb950' : '#f85149';
+    }
+  </script>
+
+<style>
     :root {
       --bg: #080d14;
       --surface: #0e1623;
@@ -440,445 +944,5 @@
       .edu-card { flex-direction: column; }
     }
   </style>
-</head>
-<body>
-
-  <!-- NAV -->
-  <nav>
-    <a class="nav-logo" href="#">EJDM</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="#about" onclick="closeMobile()">About</a></li>
-      <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
-      <li><a href="#education" onclick="closeMobile()">Education</a></li>
-      <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
-      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
-    </ul>
-  </div>
-
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-
-    <!-- Floating Tech Icons -->
-    <div class="floating-icons" aria-hidden="true">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"            class="float-icon" style="top:62%;left:5%;animation-delay:0s;"    title="HTML5">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"              class="float-icon" style="top:18%;left:80%;animation-delay:1s;"   title="CSS3">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"  class="float-icon" style="top:38%;left:18%;animation-delay:2s;"   title="JavaScript">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"          class="float-icon" style="top:68%;left:72%;animation-delay:3s;"   title="Python">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"            class="float-icon" style="top:55%;left:60%;animation-delay:2.5s;" title="MySQL">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"   class="float-icon" style="top:25%;left:8%;animation-delay:1.5s;"  title="Bootstrap">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"        class="float-icon" style="top:58%;left:30%;animation-delay:3.5s;" title="Arduino">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"             class="float-icon" style="top:42%;left:76%;animation-delay:1.8s;filter:invert(1) drop-shadow(0 0 8px rgba(56,189,248,0.4));" title="Django">
-      <img src="https://cdn-icons-png.flaticon.com/128/919/919847.png"                                  class="float-icon" style="top:15%;left:22%;animation-delay:1.2s;" title="GitHub">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"         class="float-icon" style="top:18%;left:46%;animation-delay:1.9s;" title="VS Code">
-      <img src="https://cdn-icons-png.flaticon.com/128/888/888874.png"                                  class="float-icon" style="top:22%;left:35%;animation-delay:1.3s;" title="PowerPoint">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png"                                  class="float-icon" style="top:58%;left:86%;animation-delay:2.6s;" title="Excel">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"                   class="float-icon" style="top:74%;left:46%;animation-delay:2.9s;" title="ChatGPT">
-      <img src="https://cdn-icons-png.flaticon.com/512/2702/2702602.png"                                class="float-icon" style="top:32%;left:56%;animation-delay:1.6s;" title="Google Drive">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"                                class="float-icon" style="top:82%;left:14%;animation-delay:2.4s;" title="Discord">
-      <img src="https://cdn-icons-png.flaticon.com/128/9714/9714376.png"                                class="float-icon" style="top:70%;left:15%;animation-delay:2.2s;" title="Wi-Fi">
-      <img src="https://cdn-icons-png.flaticon.com/512/906/906175.png"                                  class="float-icon" style="top:12%;left:65%;animation-delay:0.8s;" title="LAN">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg"                    class="float-icon" style="top:80%;left:88%;animation-delay:3.1s;" title="Oracle VM">
-      <img src="https://img.icons8.com/?size=80&id=YrKoPXb4jv9l&format=png"                            class="float-icon" style="top:88%;left:55%;animation-delay:0.5s;" title="PHP">
-    </div>
-
-    <div class="hero-content">
-      <div class="hero-eyebrow"><span></span> Available for opportunities</div>
-      <h1 class="hero-name">Edwin Jr. D.<br><em>Manlangit</em></h1>
-      <p class="hero-role">
-        <strong>Web Developer</strong> &nbsp;·&nbsp; <strong>Software Developer</strong> &nbsp;·&nbsp;
-        <strong>IT Support Specialist</strong> &nbsp;·&nbsp; <strong>AI Automation Specialist</strong>
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
-        <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Get in Touch</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p class="section-label">About Me</p>
-          <h2 class="section-title" style="margin-bottom:1.5rem;">Building digital experiences with purpose</h2>
-          <p>Hi, I'm <strong>Edwin Jr. D. Manlangit</strong> — a <em>Full-Stack Developer</em>, <em>AI Automation Specialist</em> & <em>IT Specialist</em> fueled by innovation.</p>
-          <p>I specialize in crafting <strong>scalable web apps, seamless UIs, smart automations, and optimized systems</strong> using <strong>Python (Django), JavaScript, HTML, CSS, MySQL</strong>, and <strong>AI tools & APIs</strong>.</p>
-          <p>I build intelligent workflows, chatbots, and automation pipelines that save time and elevate productivity. Let's engineer the <strong>future of digital experiences</strong> together.</p>
-          <div class="about-stats">
-            <div class="stat">
-              <div class="stat-num">🎓</div>
-              <div class="stat-label">Fresh Graduate</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">3+</div>
-              <div class="stat-label">Projects Built</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">BET</div>
-              <div class="stat-label">Degree — COET</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Photo Carousel -->
-        <div class="about-img-wrap reveal">
-          <div class="carousel-wrap">
-            <div class="carousel-slides" id="carouselSlides">
-              <div class="carousel-slide">
-                <img src="image/me.jpg" alt="Edwin Manlangit" onerror="this.style.background='var(--surface2)'">
-              </div>
-              <div class="carousel-slide">
-                <img src="image/me2.jpg" alt="Edwin Manlangit 2" onerror="this.style.background='var(--surface2)'">
-              </div>
-              <div class="carousel-slide">
-                <img src="image/me3.jpg" alt="Edwin Manlangit 3" onerror="this.style.background='var(--surface2)'">
-              </div>
-            </div>
-            <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
-            <button class="carousel-btn next" id="carouselNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
-            <div class="carousel-dots" id="carouselDots">
-              <button class="carousel-dot active" data-index="0"></button>
-              <button class="carousel-dot" data-index="1"></button>
-              <button class="carousel-dot" data-index="2"></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="container">
-      <p class="section-label reveal">Expertise</p>
-      <h2 class="section-title reveal">Technologies & Skills</h2>
-      <div class="skills-grid reveal">
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=80&id=YrKoPXb4jv9l&format=png" alt="PHP"><span>PHP</span></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" style="filter:invert(1)"><span>Django</span></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><span>Bootstrap</span></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino"><span>Arduino</span></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)"><span>GitHub</span></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
-        <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="OpenAI"><span>OpenAI</span></div>
-      </div>
-      <div class="reveal">
-        <p style="color:var(--muted);font-size:0.85rem;margin-bottom:1rem;">Additional competencies</p>
-        <div class="skill-tags">
-          <span class="skill-tag">AI Automation (n8n, GoHighLevel, OpenAI)</span>
-          <span class="skill-tag">Microsoft Office Suite</span>
-          <span class="skill-tag">Active Directory & Group Policy</span>
-          <span class="skill-tag">TCP/IP · DNS · DHCP</span>
-          <span class="skill-tag">Cable Management</span>
-          <span class="skill-tag">Network Troubleshooting</span>
-          <span class="skill-tag">Task Manager & System Config</span>
-          <span class="skill-tag">Video Editing</span>
-          <span class="skill-tag">Photo Editing</span>
-          <span class="skill-tag">Google Workspace</span>
-          <span class="skill-tag">Oracle VM</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- EDUCATION -->
-  <section id="education">
-    <div class="container">
-      <p class="section-label reveal">Background</p>
-      <h2 class="section-title reveal">Education</h2>
-      <div class="education-grid">
-        <div class="edu-card reveal">
-          <img src="image/tup.webp" alt="TUP Logo" class="edu-logo">
-          <div class="edu-info">
-            <h4>Technological University of the Philippines — Cavite</h4>
-            <div class="degree">Bachelor of Engineering Technology<br>Major in Computer Engineering Technology (BET-COET)</div>
-            <div class="meta">Carlos Q. Trinidad Ave., Brgy. Salawag, Dasmariñas City, Cavite</div>
-            <div class="edu-year">2018 – 2023</div>
-          </div>
-        </div>
-        <div class="edu-card reveal">
-          <img src="image/ncst.png" alt="NCST Logo" class="edu-logo">
-          <div class="edu-info">
-            <h4>National College of Science and Technology — Senior High School</h4>
-            <div class="degree">Science, Technology, Engineering & Mathematics (STEM)</div>
-            <div class="meta">Dasmariñas City, Cavite</div>
-            <div class="edu-year">2016 – 2018</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="container">
-      <p class="section-label reveal">Work</p>
-      <h2 class="section-title reveal">Featured Projects</h2>
-      <div class="projects-grid">
-
-        <div class="project-card reveal">
-          <img src="image/store.png" alt="Cafeteria Management System" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="project-img-placeholder"><i class="fas fa-utensils"></i></div>
-          <div class="project-body">
-            <h5>Cafeteria Management System</h5>
-            <div class="project-tech">
-              <span class="tech-pill">Django</span><span class="tech-pill">Python</span>
-              <span class="tech-pill">MySQL</span><span class="tech-pill">HTML/CSS</span>
-            </div>
-            <p>A web-based system for managing cafeteria operations with inventory management, order placement, cart system, real-time order preview, Google authentication, and total sales tracking.</p>
-            <a href="https://www.youtube.com/watch?v=reuxoYUbso4" class="btn btn-ghost btn-sm" target="_blank">
-              <i class="fab fa-youtube"></i> Watch Demo
-            </a>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <img src="image/hris.png" alt="DepEd HRIS Web App" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="project-img-placeholder"><i class="fas fa-users"></i></div>
-          <div class="project-body">
-            <h5>DepEd HRIS Web App</h5>
-            <div class="project-tech">
-              <span class="tech-pill">Django</span><span class="tech-pill">Google Auth</span><span class="tech-pill">MySQL</span>
-            </div>
-            <p>Simplifies employee record management for the Department of Education. Features Google authentication, PDS viewing, editing, printing, and full employee management.</p>
-            <a href="https://www.canva.com/design/DAFlXqGKYSc/840myy3JohQed91p5FGryQ/edit" class="btn btn-ghost btn-sm" target="_blank">
-              <i class="fas fa-external-link-alt"></i> View Details
-            </a>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <img src="image/uitc.png" alt="UITC Borrowing System" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="project-img-placeholder"><i class="fas fa-laptop"></i></div>
-          <div class="project-body">
-            <h5>University IT Center Borrowing System</h5>
-            <div class="project-tech">
-              <span class="tech-pill">Web App</span><span class="tech-pill">Inventory</span>
-            </div>
-            <p>A web-based application enabling users to borrow or request IT equipment online, track real-time inventory, and monitor borrowing logs for efficient resource management.</p>
-            <span class="btn btn-ghost btn-sm" style="opacity:0.5;cursor:default">
-              <i class="fas fa-clock"></i> Coming Soon
-            </span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <p class="section-label reveal">Contact</p>
-      <h2 class="section-title reveal">Let's Connect</h2>
-      <div class="contact-inner">
-        <div class="reveal">
-          <div class="contact-info">
-            <h3>Get in touch</h3>
-            <p>Whether it's a project, job opportunity, or collaboration — I'd love to hear from you.</p>
-          </div>
-          <div class="contact-items">
-            <a href="mailto:edwinjrmanlangit@gmail.com" class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
-              <div class="contact-item-text">
-                <div class="label">Email</div>
-                <div class="value">edwinjrmanlangit@gmail.com</div>
-              </div>
-            </a>
-            <a href="tel:09285781340" class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
-              <div class="contact-item-text">
-                <div class="label">Phone</div>
-                <div class="value">0928-578-1340</div>
-              </div>
-            </a>
-            <div class="contact-item" style="cursor:default">
-              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="contact-item-text">
-                <div class="label">Location</div>
-                <div class="value">Brgy. Burol II, Dasmariñas City, Cavite</div>
-              </div>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="https://www.facebook.com/dwnmnlngt/" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.linkedin.com/in/edwin-jr-manlangit-403391122" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://wa.me/639285781340" target="_blank" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="viber://chat?number=09285781340" class="social-link" title="Viber"><i class="fab fa-viber"></i></a>
-            <a href="mailto:edwinjrmanlangit@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
-          </div>
-        </div>
-
-        <div class="location-card reveal">
-          <h4><i class="fas fa-paper-plane" style="color:var(--accent);margin-right:0.5rem"></i>Send a Message</h4>
-          <div id="contactForm">
-            <div class="form-group">
-              <label class="form-label">Your Name</label>
-              <input type="text" id="fromName" class="form-input" placeholder="Juan dela Cruz" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Your Email</label>
-              <input type="email" id="fromEmail" class="form-input" placeholder="juan@example.com" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Message</label>
-              <textarea id="message" class="form-input form-textarea" placeholder="Hi Edwin, I'd like to discuss..." required></textarea>
-            </div>
-            <button id="sendBtn" class="btn btn-primary" style="width:100%;justify-content:center;">
-              <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-            <div id="formStatus" style="display:none;margin-top:1rem;padding:0.75rem 1rem;border-radius:10px;font-size:0.85rem;text-align:center;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 <span>Edwin Jr. D. Manlangit</span>. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // ── Hamburger ──
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
-    function closeMobile() { mobileMenu.classList.remove('open'); }
-
-    // ── Carousel ──
-    const slides = document.getElementById('carouselSlides');
-    const dots = document.querySelectorAll('.carousel-dot');
-    let current = 0;
-    const total = dots.length;
-
-    function goTo(index) {
-      current = (index + total) % total;
-      slides.style.transform = `translateX(-${current * 100}%)`;
-      dots.forEach((d, i) => d.classList.toggle('active', i === current));
-    }
-
-    document.getElementById('carouselPrev').addEventListener('click', () => goTo(current - 1));
-    document.getElementById('carouselNext').addEventListener('click', () => goTo(current + 1));
-    dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.index)));
-
-    // Auto-advance every 5s
-    setInterval(() => goTo(current + 1), 5000);
-
-    // ── Scroll Reveal ──
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('visible'), i * 60);
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(el => observer.observe(el));
-
-    // ── Active Nav ──
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-links a');
-    window.addEventListener('scroll', () => {
-      let cur = '';
-      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
-      navLinks.forEach(a => { a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--accent)' : ''; });
-    });
-  </script>
-  <!-- EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    // ── EmailJS Setup ──
-    // TO ACTIVATE: 
-    // 1. Go to https://www.emailjs.com and create a free account
-    // 2. Add an Email Service (Gmail) → copy your Service ID
-    // 3. Create an Email Template with variables: {{from_name}}, {{from_email}}, {{message}}
-    //    Set "To Email" in the template to: edwinjrmanlangit@gmail.com
-    // 4. Copy your Public Key from Account → API Keys
-    // 5. Replace the three placeholder values below with your real IDs
-    const EMAILJS_PUBLIC_KEY  = 'Ipze_u-LjbS9QolGf';   // e.g. 'abc123XYZ'
-    const EMAILJS_SERVICE_ID  = 'service_04ogpjl';   // e.g. 'service_xxxxxx'
-    const EMAILJS_TEMPLATE_ID = 'template_yxsi37b';  // e.g. 'template_xxxxxx'
-
-    emailjs.init(EMAILJS_PUBLIC_KEY);
-
-    document.getElementById('sendBtn').addEventListener('click', async () => {
-      const name    = document.getElementById('fromName').value.trim();
-      const email   = document.getElementById('fromEmail').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const status  = document.getElementById('formStatus');
-      const btn     = document.getElementById('sendBtn');
-
-      if (!name || !email || !message) {
-        showStatus('Please fill in all fields.', false);
-        return;
-      }
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        showStatus('Please enter a valid email address.', false);
-        return;
-      }
-
-      btn.disabled = true;
-      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
-
-      try {
-        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-          from_name:  name,
-          from_email: email,
-          message:    message,
-          to_email:   'edwinjrmanlangit@gmail.com'
-        });
-        showStatus('✅ Message sent! I\'ll get back to you soon.', true);
-        document.getElementById('fromName').value = '';
-        document.getElementById('fromEmail').value = '';
-        document.getElementById('message').value = '';
-      } catch (err) {
-        showStatus('❌ Failed to send. Please try emailing directly.', false);
-      } finally {
-        btn.disabled = false;
-        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-      }
-    });
-
-    function showStatus(msg, success) {
-      const el = document.getElementById('formStatus');
-      el.textContent = msg;
-      el.style.display = 'block';
-      el.style.background = success ? 'rgba(46,160,67,0.15)' : 'rgba(248,81,73,0.15)';
-      el.style.border = success ? '1px solid rgba(46,160,67,0.3)' : '1px solid rgba(248,81,73,0.3)';
-      el.style.color = success ? '#3fb950' : '#f85149';
-    }
-  </script>
 </body>
 </html>
