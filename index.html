@@ -10,11 +10,45 @@
 </head>
 <body>
 
+  <!-- ================= LOADING SCREEN START ================= -->
+  <div id="loader">
+    <div class="loader-bg"></div>
+
+    <div class="loader-content">
+
+      <div class="tech-circle"></div>
+
+      <div class="terminal-loader">
+        <div class="terminal-header">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="terminal-body">
+          <p>> Initializing Portfolio...</p>
+          <p>> Loading Components...</p>
+          <p>> Connecting Database...</p>
+          <p>> Launching Experience<span class="blink">_</span></p>
+        </div>
+      </div>
+
+      <div class="loader-logo">EJDM</div>
+
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- ================= LOADING SCREEN END ================= -->
+
   <!-- NAV -->
   <nav>
     <a class="nav-logo" href="#">EJDM</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -28,6 +62,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <ul>
       <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#experience" onclick="closeMobile()">Experience</a></li>
       <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
       <li><a href="#education" onclick="closeMobile()">Education</a></li>
       <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
@@ -93,8 +128,8 @@
           <p>I build intelligent workflows, chatbots, and automation pipelines that save time and elevate productivity. Let's engineer the <strong>future of digital experiences</strong> together.</p>
           <div class="about-stats">
             <div class="stat">
-              <div class="stat-num">🎓</div>
-              <div class="stat-label">Fresh Graduate</div>
+              <div class="stat-num">2+</div>
+              <div class="stat-label">Years Experience</div>
             </div>
             <div class="stat">
               <div class="stat-num">6+</div>
@@ -130,6 +165,70 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label reveal">Career</p>
+      <h2 class="section-title reveal">Work Experience</h2>
+      <div class="experience-timeline">
+
+        <div class="exp-item reveal">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h4 class="exp-role">ICT Support Staff</h4>
+                <div class="exp-company"><i class="fas fa-building"></i> City Schools Division Office of Dasmariñas — ICT Department</div>
+              </div>
+              <span class="exp-date"><i class="fas fa-calendar-alt"></i> Nov 2025 – Mar 2026</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Delivered hardware, software, and network technical support across the division</li>
+              <li>Set up and configured computers, peripherals, and network infrastructure</li>
+              <li>Managed CCTV systems and administered Active Directory user accounts</li>
+              <li>Resolved end-user IT issues ensuring minimal operational downtime</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tech-pill">IT Support</span>
+              <span class="tech-pill">Active Directory</span>
+              <span class="tech-pill">Networking</span>
+              <span class="tech-pill">CCTV</span>
+              <span class="tech-pill">Hardware</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h4 class="exp-role">IT Technical Support Intern / Web Developer</h4>
+                <div class="exp-company"><i class="fas fa-building"></i> City Schools Division Office of Dasmariñas — ICT Department</div>
+              </div>
+              <span class="exp-date"><i class="fas fa-calendar-alt"></i> Mar 2023 – Jul 2023</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Provided frontline technical support and troubleshooting for department staff</li>
+              <li>Developed web applications using Django, HTML, CSS, JavaScript, and MySQL</li>
+              <li>Assisted in network setup, maintenance, and cable management tasks</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tech-pill">Django</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">Networking</span>
+              <span class="tech-pill">Tech Support</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -248,8 +347,8 @@
               <span class="tech-pill">Django</span><span class="tech-pill">Google Auth</span><span class="tech-pill">MySQL</span>
             </div>
             <p>Simplifies employee record management for the Department of Education. Features Google authentication, PDS viewing, editing, printing, and full employee management.</p>
-            <!-- <a href="https://www.canva.com/design/DAFlXqGKYSc/840myy3JohQed91p5FGryQ/edit" class="btn btn-ghost btn-sm" target="_blank"> -->
-              <i class="fas fa-lock"></i> Internal System
+            <a href="https://www.canva.com/design/DAFlXqGKYSc/840myy3JohQed91p5FGryQ/edit" class="btn btn-ghost btn-sm" target="_blank">
+              <i class="fas fa-external-link-alt"></i> View Details
             </a>
           </div>
         </div>
@@ -264,7 +363,7 @@
             </div>
             <p>A web-based application enabling users to borrow or request IT equipment online, track real-time inventory, and monitor borrowing logs for efficient resource management.</p>
             <span class="btn btn-ghost btn-sm" style="opacity:0.5;cursor:default">
-              <i class="fas fa-lock"></i> Internal System
+              <i class="fas fa-clock"></i> Internal System
             </span>
           </div>
         </div>
@@ -360,6 +459,19 @@
               </div>
             </div>
           </div>
+
+          <div class="contact-resume-btns">
+            <!-- <p class="contact-resume-label"><i class="fas fa-file-alt"></i> My Resume</p> -->
+            <div class="contact-resume-actions">
+              <a href="EManlangit_Resume_v4.pdf" target="_blank" class="btn btn-primary">
+                <i class="fas fa-eye"></i> View Resume
+              </a>
+              <a href="EManlangit_Resume_v4.pdf" download="Edwin_Manlangit_Resume.pdf" class="btn btn-ghost">
+                <i class="fas fa-download"></i> Download PDF
+              </a>
+            </div>
+          </div>
+
           <div class="social-links">
             <a href="https://www.facebook.com/dwnmnlngt/" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.linkedin.com/in/edwin-jr-manlangit-403391122" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -400,6 +512,17 @@
   </footer>
 
   <script>
+    // ── LOADER ──
+    document.body.classList.add('loading');
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.classList.add('hidden');
+        document.body.classList.remove('loading');
+        document.body.classList.add('site-loaded');
+      }, 2600);
+    });
+
     // ── Hamburger ──
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -882,7 +1005,6 @@
     }
     .contact-item-text .label { font-size: 0.72rem; color: var(--muted); margin-bottom: 0.1rem; }
     .contact-item-text .value { font-size: 0.88rem; font-weight: 500; }
-    .social-links { display: flex; gap: 0.75rem; margin-top: 2rem; flex-wrap: wrap; }
     .social-link {
       width: 44px; height: 44px; background: var(--surface2);
       border: 1px solid var(--border); border-radius: 10px;
@@ -922,6 +1044,185 @@
     .form-input:focus { border-color: var(--accent2); box-shadow: 0 0 0 3px rgba(14,165,233,0.15); }
     .form-input::placeholder { color: var(--muted); }
     .form-textarea { resize: vertical; min-height: 110px; }
+
+    /* ── LOADER ── */
+    body.loading { overflow: hidden; }
+
+    #loader {
+      position: fixed; inset: 0; z-index: 999999;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+      background: radial-gradient(circle at top, rgba(56,189,248,0.12), transparent 45%), #050b12;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+    #loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+    .loader-bg {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(56,189,248,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56,189,248,0.05) 1px, transparent 1px);
+      background-size: 42px 42px;
+      animation: moveGrid 12s linear infinite;
+    }
+    @keyframes moveGrid {
+      from { transform: translateY(0); }
+      to   { transform: translateY(42px); }
+    }
+
+    .loader-content {
+      position: relative; z-index: 2;
+      width: min(92%, 500px); text-align: center;
+    }
+
+    .tech-circle {
+      width: 120px; height: 120px;
+      margin: 0 auto 2rem;
+      border-radius: 50%;
+      border: 2px solid rgba(56,189,248,0.2);
+      position: relative;
+      animation: rotateCircle 6s linear infinite;
+    }
+    .tech-circle::before, .tech-circle::after {
+      content: "";
+      position: absolute; inset: 10px;
+      border-radius: 50%;
+      border: 2px dashed rgba(56,189,248,0.25);
+    }
+    .tech-circle::after { inset: 24px; border-style: solid; opacity: 0.5; }
+    @keyframes rotateCircle {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    .terminal-loader {
+      overflow: hidden; border-radius: 18px;
+      background: rgba(15,28,46,0.85);
+      border: 1px solid rgba(56,189,248,0.2);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 0 40px rgba(56,189,248,0.08), inset 0 0 30px rgba(56,189,248,0.04);
+    }
+    .terminal-header {
+      display: flex; gap: 8px;
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid rgba(56,189,248,0.1);
+      background: rgba(255,255,255,0.02);
+    }
+    .terminal-header span { width: 12px; height: 12px; border-radius: 50%; }
+    .terminal-header span:nth-child(1) { background: #ff5f56; }
+    .terminal-header span:nth-child(2) { background: #ffbd2e; }
+    .terminal-header span:nth-child(3) { background: #27c93f; }
+
+    .terminal-body { padding: 1.6rem; text-align: left; }
+    .terminal-body p {
+      color: #7dd3fc;
+      font-family: monospace; font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+      opacity: 0;
+      animation: terminalFade 0.5s forwards;
+    }
+    .terminal-body p:nth-child(1) { animation-delay: 0.3s; }
+    .terminal-body p:nth-child(2) { animation-delay: 0.8s; }
+    .terminal-body p:nth-child(3) { animation-delay: 1.3s; }
+    .terminal-body p:nth-child(4) { animation-delay: 1.8s; }
+    @keyframes terminalFade {
+      from { opacity: 0; transform: translateX(-10px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+
+    .blink { animation: blink 1s infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    .loader-logo {
+      margin-top: 2rem;
+      font-family: 'Sora', sans-serif; font-size: 3.5rem; font-weight: 800;
+      letter-spacing: 0.15em;
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9, #7dd3fc);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: glowPulse 2s ease-in-out infinite;
+    }
+    @keyframes glowPulse {
+      0%,100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(56,189,248,0.3)); }
+      50%      { transform: scale(1.05); filter: drop-shadow(0 0 24px rgba(56,189,248,0.7)); }
+    }
+
+    .loading-bar {
+      width: 100%; height: 6px;
+      margin-top: 2rem; overflow: hidden;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.06);
+    }
+    .loading-progress {
+      width: 0%; height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+      animation: loadingProgress 2.6s ease forwards;
+    }
+    @keyframes loadingProgress { to { width: 100%; } }
+
+    body.site-loaded section,
+    body.site-loaded nav,
+    body.site-loaded footer {
+      animation: siteFade 0.9s cubic-bezier(.22,1,.36,1);
+    }
+    @keyframes siteFade {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── EXPERIENCE ── */
+    #experience { background: var(--surface); }
+    .experience-timeline { position: relative; padding-left: 2rem; }
+    .experience-timeline::before {
+      content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px;
+      width: 2px; background: linear-gradient(to bottom, var(--accent), rgba(56,189,248,0.1));
+      border-radius: 2px;
+    }
+    .exp-item { position: relative; margin-bottom: 2rem; }
+    .exp-item:last-child { margin-bottom: 0; }
+    .exp-dot {
+      position: absolute; left: -2rem; top: 1.4rem;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--accent); border: 3px solid var(--surface);
+      box-shadow: 0 0 12px rgba(56,189,248,0.5);
+      margin-left: 1px;
+    }
+    .exp-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.75rem;
+      transition: var(--transition);
+    }
+    .exp-card:hover { border-color: rgba(56,189,248,0.3); transform: translateX(4px); box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+    .exp-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .exp-role { font-family: 'Sora', sans-serif; font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.35rem; }
+    .exp-company { color: var(--accent); font-size: 0.83rem; font-weight: 500; display: flex; align-items: center; gap: 0.4rem; }
+    .exp-date {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.18);
+      color: var(--muted); border-radius: 100px; padding: 0.25rem 0.85rem;
+      font-size: 0.75rem; font-weight: 500; white-space: nowrap;
+    }
+    .exp-bullets { list-style: none; margin-bottom: 1rem; display: flex; flex-direction: column; gap: 0.45rem; }
+    .exp-bullets li { color: var(--muted); font-size: 0.88rem; padding-left: 1.2rem; position: relative; line-height: 1.6; }
+    .exp-bullets li::before { content: '▹'; position: absolute; left: 0; color: var(--accent); font-size: 0.75rem; top: 0.1rem; }
+    .exp-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+    .social-links {
+      display: flex; gap: 0.75rem; margin-top: 1.75rem; flex-wrap: wrap;
+      padding-top: 1.75rem; border-top: 1px solid var(--border);
+    }
+    .contact-resume-btns { margin-top: 1.5rem; }
+    .contact-resume-label {
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted);
+      display: flex; align-items: center; gap: 0.5rem;
+      margin-bottom: 0.9rem;
+    }
+    .contact-resume-label i { color: var(--accent); }
+    .contact-resume-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+    /* ── RESUME CSS (removed — merged into contact) ── */
 
     /* ── SCROLL REVEAL ── */
     .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
